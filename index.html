@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth scroll-pt-20">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rabbit CBA - Servicio Técnico Informático en Córdoba</title>
+<meta name="description" content="Desde 2001 resolviendo tus dudas y potenciando tus equipos en Córdoba. Taller, ventas con sistema circular e impresión 3D en madera.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = {
+  darkMode: 'media',
+  theme: { extend: {
+    colors: { brand: '#3235C4', sun: '#FFDE59', steel: '#7A7A7A' },
+    fontFamily: {
+      display: ['Anton', 'Impact', 'Arial Narrow', 'sans-serif'],
+      cond: ['"Roboto Condensed"', 'Arial Narrow', 'sans-serif'],
+      sans: ['Inter', 'system-ui', 'sans-serif']
+    }
+  } }
+}
+</script>
+</head>
+<body class="bg-white text-[#1B1B22] dark:bg-[#101018] dark:text-[#F1F1F6] font-sans text-[1.05rem] leading-relaxed pb-[env(safe-area-inset-bottom)]">
+
+<!-- NAV -->
+<header class="sticky top-0 z-10 bg-brand text-white pt-[env(safe-area-inset-top)]">
+  <div class="mx-auto max-w-5xl px-5 py-2.5 flex items-center justify-between gap-4">
+    <a href="#inicio" class="flex items-center gap-2.5 font-cond font-bold text-2xl text-sun no-underline">
+      <img src="data:image/jpeg;base64,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mvC/F/we8Raj4tvLjT44JLG9nMwmaUL5W45IYHngk9M5r0N/i94KVWb+2Q2BnaIJMn2+7XN+CPjRp94ZrTxDL9jk812guGGUKFiQrEdCAcZ6EV5HD2Gz/KVVxmEw70STUou7T6paN2trbvsbYmeGrcsJy+5np9pbi0tILdTlYY1jB9QBj+leHa5Ms/x6typyEvbdPxCLXpWsfFLwppFk9wurW97IFykFs29nPYccD6mvDPDuvQz/ABBtde1i4W3ja8N1NJgkL1IAABPXAr0+CsnxkI4vGVqcknTlFXTvJvXRbvb72ZY+vB8kIvqj6g6V4Nc/BbxC3ithGkB0x7rzPtXmj5Yy2eV67scYxXol38YfB0NrNJDqvnyIhKRLDIC5xwOVxzWL4C+MemX9hHZ+IrpbK/iG3z5P9XMOxz2b1zXm5DQ4gymhXxOFoNJ2TUou/X3ktG7dd1rqu2uIlhq0oxnL8T0/6V434JmW4+N+vSKcg/aRn6Mo/pXYeI/ix4a0XT5ZbTUbfULvafJgt235btuI4A9a8j+Fviax0XxjNqutXfkxywS7pSrNl2YHoAT611cM5FjY5bjq86UlzQ5YqzvJ7uy3eyIxeIpurTins7nunjj/AJE3XP8Arxm/9ANfLdhOLa+tZz0imRz+DA1734r+J/hHUfDOq2drq6yXE9rJHGnkyDcxUgDla+fe1fX+HGX4jD4OvTxVOULy+0mtLeZxZpUjKcXB3PsZXDgOpBVhkEdxXjfjT4L6xq/iS81LSbmyMF5IZikzlGRj1HAORnJqTwH8abC00q30zxEs8clugjS6jTerqOBuA5BA785rsV+Lvgrg/wBtKP8AthJ/8TXwuEwHEHDuMm8JRk+l1Fyi1fR6f8OehOphsTBc8vxsfNt3bPZ3U1rJgyQyNG205GVODj8qiq3q88dzq99PC26OW4kdG9VLEg/lVSv6AoylKEXLeyPnJb6BRRRWggooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=" alt="" class="w-10 h-10 rounded-lg">Rabbit CBA
+    </a>
+    <nav aria-label="Principal" class="hidden md:flex gap-5 text-[.95rem] font-medium">
+      <a class="opacity-90 hover:opacity-100 hover:underline" href="#historia">Historia</a>
+      <a class="opacity-90 hover:opacity-100 hover:underline" href="#taller">Taller</a>
+      <a class="opacity-90 hover:opacity-100 hover:underline" href="#ventas">Ventas</a>
+      <a class="opacity-90 hover:opacity-100 hover:underline" href="#innovacion">Impresión 3D</a>
+      <a class="opacity-90 hover:opacity-100 hover:underline" href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <div class="bg-brand text-white pt-12 pb-16 overflow-hidden">
+    <div class="mx-auto max-w-5xl px-5 grid md:grid-cols-[1.4fr_.8fr] gap-8 items-center">
+      <div>
+        <h1 class="font-display uppercase leading-[.95] text-[clamp(3rem,10vw,7.2rem)] mb-[.4em]">
+          Rabbit CBA <span class="block text-sun">Servicio técnico informático</span>
+        </h1>
+        <p class="text-xl font-medium max-w-[34ch] mb-4">Desde 2001 resolviendo tus dudas y potenciando tus equipos en Córdoba.</p>
+        <p class="max-w-[56ch] opacity-95">Más que un servicio técnico, somos tu aliado informático. Combinamos la experiencia de las clásicas casas de computación de los 90, donde te sentabas, aprendías y te asesorabas con un experto, con la innovación y velocidad que exige el mundo actual. Trabajamos todas las marcas y sistemas operativos.</p>
+        <div class="flex flex-wrap gap-3 mt-6">
+          <a href="#contacto" class="inline-block px-5 py-3 rounded-md font-semibold bg-sun text-[#1B1B22] border-2 border-sun hover:brightness-95">Solicitar turno para taller</a>
+          <a href="#ventas" class="inline-block px-5 py-3 rounded-md font-semibold border-2 border-white text-white hover:bg-white/10">Cotizar mi equipo usado</a>
+          <a href="#innovacion" class="inline-block px-5 py-3 rounded-md font-semibold border-2 border-white text-white hover:bg-white/10">Consultar por impresión 3D en madera</a>
+        </div>
+      </div>
+      <img src="img/logo.jpeg" alt="Logo de Rabbit: un conejo blanco sobre fondo azul" class="w-full max-w-[180px] md:max-w-[320px] md:justify-self-end rounded-[28px] ring-[6px] ring-sun order-first md:order-none">
+    </div>
+  </div>
+  <div class="bg-sun text-[#1B1B22] font-cond font-bold text-lg text-center px-4 py-3">El corazón de la vieja casa de computación, en la era digital.</div>
+
+  <!-- HISTORIA -->
+  <section id="historia" class="bg-steel text-white py-12 md:py-[4.5rem]">
+    <div class="mx-auto max-w-5xl px-5 grid md:grid-cols-2 gap-12">
+      <div>
+        <div aria-hidden="true" class="font-display text-black/90 leading-[.9] text-[clamp(5rem,16vw,11rem)]">2001</div>
+        <h2 class="font-display uppercase text-[clamp(2rem,5vw,3.2rem)] leading-[1.05] mt-4">Pasión por la informática desde 2001</h2>
+      </div>
+      <div>
+        <p class="mb-4 max-w-[62ch]">Rabbit CBA nació en 2001 como un cibercafé, un espacio donde la comunidad se reunía a aprender y conectarse. Desde entonces, no paramos de crecer. Detrás de este proyecto está Darío Tonello, quien perfeccionó su expertise trabajando para la multinacional AMX Móvil Claro Arg.</p>
+        <p class="mb-4 max-w-[62ch]">Hoy, Rabbit CBA mantiene intacta esa mística: la de un lugar donde te atendemos cara a cara, te explicamos todo lo que tu equipo necesita y te ayudamos a sacarle el máximo provecho. Ese toque humano que no se pierde es nuestra marca registrada.</p>
+        <img src="img/historia.jpeg" alt="Interior del local con pared azul, escritorio de trabajo y banquetas" loading="lazy" class="w-full aspect-[4/3] object-cover rounded-[10px] mt-5">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-12 md:py-[4.5rem]">
+    <div class="mx-auto max-w-5xl px-5">
+      <h2 class="font-display uppercase text-[clamp(2rem,5vw,3.2rem)] leading-[1.05] mb-4">Nuestros servicios</h2>
+
+      <!-- Taller -->
+      <div id="taller" class="py-12">
+          <h3 class="font-display uppercase text-[clamp(1.8rem,4vw,2.6rem)] leading-[1.05]">Taller Rabbit
+            <small class="block font-sans normal-case text-base font-medium text-[#55555F] dark:text-[#B4B4C2] leading-normal mt-2.5">Reparación y mantenimiento. ¿Tu PC o notebook están lentas o necesitan atención? Nos especializamos en MacOS, Linux y Windows.</small>
+          </h3>
+          <div class="grid md:grid-cols-2 gap-10 items-center mt-6">
+            <img src="img/posnet.jpeg" alt="Notebook con el logo de Rabbit Servicio Técnico sobre el mostrador" loading="lazy" class="w-full aspect-[4/3] object-cover rounded-[10px]">
+            <ul>
+          <li class="relative py-3.5 pl-6 border-b border-[#E2E2EA] dark:border-[#2A2A38] before:absolute before:left-0 before:top-[1.4rem] before:w-2.5 before:h-2.5 before:rounded-full before:bg-brand"><b class="block">Actualización de hardware</b>Cambio de discos, memorias RAM, placas y más.</li>
+          <li class="relative py-3.5 pl-6 border-b border-[#E2E2EA] dark:border-[#2A2A38] before:absolute before:left-0 before:top-[1.4rem] before:w-2.5 before:h-2.5 before:rounded-full before:bg-brand"><b class="block">Redes y nodos</b>Instalación, configuración y optimización de redes para tu hogar o pyme.</li>
+          <li class="relative py-3.5 pl-6 border-b border-[#E2E2EA] dark:border-[#2A2A38] before:absolute before:left-0 before:top-[1.4rem] before:w-2.5 before:h-2.5 before:rounded-full before:bg-brand"><b class="block">Mantenimiento integral</b>Diagnóstico preciso y solución definitiva.</li>
+        </ul>
+          </div>
+      </div>
+
+      <!-- VENTAS -->
+      <div id="ventas" class="grid md:grid-cols-[.9fr_1.1fr] gap-10 px-6 py-12 rounded-xl bg-[#F3F3F8] dark:bg-[#181824] md:-mx-8 md:px-8">
+        <h3 class="font-display uppercase text-[clamp(1.8rem,4vw,2.6rem)] leading-[1.05]">Ventas Rabbit
+          <small class="block font-sans normal-case text-base font-medium text-[#55555F] dark:text-[#B4B4C2] leading-normal mt-2.5">Sistema circular. Actualizate sin perder una pierna: lo pensamos para vos.</small>
+        </h3>
+        <ol>
+          <li class="relative py-3.5 pl-11 border-b border-[#E2E2EA] dark:border-[#2A2A38]"><span class="absolute left-0 top-3 w-7 h-7 rounded-full bg-brand text-white text-sm font-semibold grid place-items-center">1</span><b class="block">Recibimos tu usada en parte de pago</b>Traenos tu equipo viejo, PC o notebook.</li>
+          <li class="relative py-3.5 pl-11 border-b border-[#E2E2EA] dark:border-[#2A2A38]"><span class="absolute left-0 top-3 w-7 h-7 rounded-full bg-brand text-white text-sm font-semibold grid place-items-center">2</span><b class="block">Cotización sin cargo</b>Lo evaluamos y te damos un valor real en el acto.</li>
+          <li class="relative py-3.5 pl-11 border-b border-[#E2E2EA] dark:border-[#2A2A38]"><span class="absolute left-0 top-3 w-7 h-7 rounded-full bg-brand text-white text-sm font-semibold grid place-items-center">3</span><b class="block">Salto de calidad</b>Accedé a equipos de marcas líderes como Apple, Lenovo y más, pagando la diferencia.</li>
+        </ol>
+      </div>
+
+      <!-- INNOVACION -->
+      <div id="innovacion" class="px-6 py-12 mt-6 rounded-xl bg-brand text-white md:-mx-8 md:px-8">
+          <h3 class="font-display uppercase text-[clamp(1.8rem,4vw,2.6rem)] leading-[1.05]">Innovación Rabbit
+            <small class="block font-sans normal-case text-base font-medium text-sun leading-normal mt-2.5">Impresión 3D y creaciones. Por inventar cosas, no somos del pasado: nos animamos a crear lo que imagines.</small>
+          </h3>
+          <div class="grid md:grid-cols-2 gap-10 items-center mt-6">
+            <img src="img/impresion3d.jpeg" alt="Pantalla con el logo de Rabbit en un soporte de madera" loading="lazy" class="w-full aspect-[4/3] object-cover rounded-[10px]">
+            <ul>
+          <li class="relative py-3.5 pl-6 border-b border-white/25 before:absolute before:left-0 before:top-[1.4rem] before:w-2.5 before:h-2.5 before:rounded-full before:bg-sun"><b class="block">Impresión 3D en madera y otros materiales</b>No todo es plástico. Creamos objetos únicos con texturas y materiales alternativos.</li>
+          <li class="relative py-3.5 pl-6 border-b border-white/25 before:absolute before:left-0 before:top-[1.4rem] before:w-2.5 before:h-2.5 before:rounded-full before:bg-sun"><b class="block">Transformá tu espacio</b>Traé tu PC o tus ideas y diseñemos juntos objetos exclusivos para tu casa o negocio.</li>
+        </ul>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="bg-[#F3F3F8] dark:bg-[#181824] py-12 md:py-[4.5rem]">
+    <div class="mx-auto max-w-5xl px-5 grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="font-display uppercase text-[clamp(2rem,5vw,3.2rem)] leading-[1.05] mb-4">Escribinos</h2>
+        <p class="max-w-[62ch]">Contanos qué necesitás y te respondemos por WhatsApp.</p>
+        <form id="wa-form" novalidate class="grid gap-3.5 mt-5">
+          <label class="grid gap-1.5 font-semibold text-[.95rem]">Tu nombre
+            <input id="f-nombre" autocomplete="name" required class="w-full px-3.5 py-3 font-normal text-base rounded-md border-2 border-[#E2E2EA] dark:border-[#2A2A38] bg-white dark:bg-[#101018] focus:border-brand focus:outline-none">
+          </label>
+          <label class="grid gap-1.5 font-semibold text-[.95rem]">¿Qué necesitás?
+            <select id="f-motivo" class="w-full px-3.5 py-3 font-normal text-base rounded-md border-2 border-[#E2E2EA] dark:border-[#2A2A38] bg-white dark:bg-[#101018] focus:border-brand focus:outline-none">
+              <option>Turno para taller</option><option>Cotizar mi equipo usado</option><option>Impresión 3D en madera</option><option>Otra consulta</option>
+            </select>
+          </label>
+          <label class="grid gap-1.5 font-semibold text-[.95rem]">Mensaje
+            <textarea id="f-msg" placeholder="Ej: mi notebook está lenta y quiero revisarla" class="w-full min-h-[110px] resize-y px-3.5 py-3 font-normal text-base rounded-md border-2 border-[#E2E2EA] dark:border-[#2A2A38] bg-white dark:bg-[#101018] focus:border-brand focus:outline-none"></textarea>
+          </label>
+          <button type="submit" class="px-5 py-3 rounded-md font-semibold bg-[#25D366] text-[#0b2e17] border-2 border-[#25D366] hover:brightness-95 cursor-pointer">Enviar por WhatsApp</button>
+          <p id="f-note" role="status" class="text-sm text-[#55555F] dark:text-[#B4B4C2]">Se abre WhatsApp con tu mensaje listo para enviar.</p>
+        </form>
+      </div>
+      <div class="text-[#55555F] dark:text-[#B4B4C2]">
+        <img src="img/afuera.jpeg" alt="Frente del local Rabbit en Metán 935" loading="lazy" class="w-full max-w-[420px] aspect-[4/5] object-cover rounded-[10px]">
+        <div class="mt-6">
+        <p class="mb-4"><b class="text-[#1B1B22] dark:text-[#F1F1F6]">Dirección</b><br>Metán 935, PB, Dpto. OF 3, entre Iruya y La Banda. Barrio Parque Atlántica, Córdoba.</p>
+        <p class="mb-4"><b class="text-[#1B1B22] dark:text-[#F1F1F6]">Horarios de atención</b><br>[Agregar horarios, ej: lunes a viernes de 8:30 a 19 hs]</p>
+        </div>
+        <div class="flex gap-3 mt-5">
+          <a id="wa-icon" href="#contacto" aria-label="WhatsApp" title="WhatsApp" class="w-[52px] h-[52px] rounded-full bg-[#25D366] text-[#0b2e17] grid place-items-center transition-transform hover:-translate-y-0.5"><svg class="w-[26px] h-[26px]" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.7.3 1.26.49 1.7.63.72.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 005.68 1.45c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.23-6.15-3.47-8.4z"/></svg></a>
+          <a href="https://instagram.com/rabbit_cba" target="_blank" rel="noopener" aria-label="Instagram @rabbit_cba" title="Instagram" class="w-[52px] h-[52px] rounded-full bg-brand text-white grid place-items-center transition-transform hover:-translate-y-0.5"><svg class="w-[26px] h-[26px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="mailto:darioatonello@gmail.com" aria-label="Email" title="darioatonello@gmail.com" class="w-[52px] h-[52px] rounded-full bg-brand text-white grid place-items-center transition-transform hover:-translate-y-0.5"><svg class="w-[26px] h-[26px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+          <a href="https://www.linkedin.com/in/darioatonello" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn" class="w-[52px] h-[52px] rounded-full bg-brand text-white grid place-items-center transition-transform hover:-translate-y-0.5"><svg class="w-[26px] h-[26px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6m0 3c0-2 1.5-3 3-3s2 1.2 2 3v3"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-black text-[#cfcfd6] py-8 text-sm">
+  <div class="mx-auto max-w-5xl px-5 grid grid-cols-1 md:grid-cols-3 items-center gap-4 text-center">
+    <span>© 2026 Rabbit CBA. Todos los derechos reservados.</span>
+    <span>Reparación y mantenimiento de equipos informáticos</span>
+    <span>Creado por <a href="https://creaweb.com.ar" target="_blank" rel="noopener" class="text-sun hover:underline">creaweb.com.ar</a></span>
+  </div>
+</footer>
+
+<script>
+
+const WHATSAPP = "5493518105616";
+(function(){
+  var f=document.getElementById('wa-form'),n=document.getElementById('f-note');
+  var ok='text-sm text-[#55555F] dark:text-[#B4B4C2]', err='text-sm font-semibold text-[#C62828]';
+  if(WHATSAPP){var d=document.getElementById('wa-icon');d.href='https://wa.me/'+WHATSAPP;d.target='_blank';d.rel='noopener';}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var nom=document.getElementById('f-nombre').value.trim();
+    if(!nom){n.textContent='Escribí tu nombre para continuar.';n.className=err;document.getElementById('f-nombre').focus();return;}
+    if(!WHATSAPP){n.textContent='Falta cargar el número de WhatsApp del negocio.';n.className=err;return;}
+    var t='Hola Rabbit CBA, soy '+nom+'.\nMe interesa: '+document.getElementById('f-motivo').value+'.';
+    var m=document.getElementById('f-msg').value.trim();
+    if(m)t+='\n'+m;
+    n.textContent='Abriendo WhatsApp…';n.className=ok;
+    window.open('https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(t),'_blank','noopener');
+  });
+})();
+</script>
+</body>
+</html>
